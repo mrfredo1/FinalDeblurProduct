@@ -33,8 +33,8 @@ if selected == "HOME":
     left, right = st.columns(2)
     with left:
       image_comparison(
-        img1="https://cdn.britannica.com/25/172925-050-DC7E2298/black-cat-back.jpg",
-        img2="https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg",
+        img1="Image20230629144551.jpg",
+        img2="Image20230629144614.jpg",
         label1="Before",
         label2="After",
         width=600,
@@ -85,46 +85,46 @@ if selected == "HOME":
 
     col1, col2, col3 = st.columns(3)
     with col1:
-      # render image-comparison
-      image_comparison(
-        img1="https://static.scientificamerican.com/sciam/cache/file/32665E6F-8D90-4567-9769D59E11DB7F26_source.jpg",
-        img2="https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg",
-        label1="Before",
-        label2="After",
-        width=400,
-        starting_position=50,
-        show_labels=True,
-        make_responsive=True,
-        in_memory=True,
-    )
+        # render image-comparison
+        image_comparison(
+            img1="Image20230629144421.png",
+            img2="https://www.lifewire.com/thmb/VZMDtSMendBSrdbGrfLOoHADXDU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/low-angle-view-of-young-woman-taking-selfie-with-dog-through-smart-phone-at-beach-against-clear-sky-1084684208-7e6a0a114e4144129d9b7ff7fd3d47c4.jpg",
+            label1="Before",
+            label2="After",
+            width=400,
+            starting_position=50,
+            show_labels=True,
+            make_responsive=True,
+            in_memory=True,
+        )
 
     with col2:
-      # render image-comparison
-      image_comparison(
-        img1="https://static.scientificamerican.com/sciam/cache/file/32665E6F-8D90-4567-9769D59E11DB7F26_source.jpg",
-        img2="https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg",
-        label1="Before",
-        label2="After",
-        width=400,
-        starting_position=50,
-        show_labels=True,
-        make_responsive=True,
-        in_memory=True,
-    )
+        # render image-comparison
+        image_comparison(
+            img1="Image20230629144426.png",
+            img2="https://images.squarespace-cdn.com/content/v1/592df00e3a0411d38a6c0e88/1612639950564-GYA9FXSRHNM4NP4CLP5Y/arterra-landscape-architects-carmel-california-02.jpg?format=2500w",
+            label1="Before",
+            label2="After",
+            width=400,
+            starting_position=50,
+            show_labels=True,
+            make_responsive=True,
+            in_memory=True,
+        )
 
     with col3:
-      # render image-comparison
-      image_comparison(
-        img1="https://static.scientificamerican.com/sciam/cache/file/32665E6F-8D90-4567-9769D59E11DB7F26_source.jpg",
-        img2="https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg",
-        label1="Before",
-        label2="After",
-        width=400,
-        starting_position=50,
-        show_labels=True,
-        make_responsive=True,
-        in_memory=True,
-    )
+        # render image-comparison
+        image_comparison(
+            img1="Image20230629144346.png",
+            img2="https://cdn.ceoworld.biz/wp-content/uploads/2021/08/Bugs-Bunny.jpg",
+            label1="Before",
+            label2="After",
+            width=400,
+            starting_position=50,
+            show_labels=True,
+            make_responsive=True,
+            in_memory=True,
+        )
 
 if selected == "ABOUT":
     st.title("")
@@ -154,7 +154,7 @@ the front end and back. """)
     with left:
         st.markdown("<h3 style='text-align: center; color: white;'>Micheal Li</h1>", unsafe_allow_html=True)
     with right:
-        st.text("""Hello! My name is Micheal and I live in Chine. I helped write the
+        st.text("""Hello! My name is Micheal and I live in China. I helped write the
 code for the model and train it. I mostly worked on the backend. """)
 
     st.divider()
@@ -189,4 +189,7 @@ project, I helped collect images and contributed to the backend as
 well as connecting the backend to the frontend.""")
 
 if selected == "VIDEO":
-    st.title("You have selected Video")
+    video_file = open('Untitled 720p (2) (1).mp4', 'rb')
+    video_bytes = video_file.read()
+
+    st.video(video_bytes)
