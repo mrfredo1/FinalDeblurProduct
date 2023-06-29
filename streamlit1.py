@@ -126,64 +126,65 @@ if selected == "HOME":
         in_memory=True,
     )
 
-st.title("")
+if selected == "ABOUT":
+    st.title("")
 
-left, right = st.columns(2)
-with left:
-    st.markdown("<h3 style='text-align: center; color: white;'>Mohak Acharya</h1>", unsafe_allow_html=True)
-with right:
-    st.text("""I am Mohak, CV instructor at AI Camp, I have been a mentor to all these
+    left, right = st.columns(2)
+    with left:
+        st.markdown("<h3 style='text-align: center; color: white;'>Mohak Acharya</h1>", unsafe_allow_html=True)
+    with right:
+        st.text("""I am Mohak, CV instructor at AI Camp, I have been a mentor to all these
 students while developing this Deblur project, I have helped them at
 several points and guided them to correct sources when they needed my
 help.""")
 
-st.divider()
+    st.divider()
 
-left, right = st.columns(2)
-with left:
-    st.text("""Hi, my name's Alfredo and I am from the Bay Area. I mostly worked
+    left, right = st.columns(2)
+    with left:
+        st.text("""Hi, my name's Alfredo and I am from the Bay Area. I mostly worked
 on the backend for this project, as well as the connection between
 the front end and back. """)
-with right:
-    st.markdown("<h3 style='text-align: center; color: white;'>Alfredo Fernandez</h1>", unsafe_allow_html=True)
+    with right:
+        st.markdown("<h3 style='text-align: center; color: white;'>Alfredo Fernandez</h1>", unsafe_allow_html=True)
 
-st.divider()
+    st.divider()
 
-left, right = st.columns(2)
-with left:
-    st.markdown("<h3 style='text-align: center; color: white;'>Micheal Li</h1>", unsafe_allow_html=True)
-with right:
-    st.text("""Hello! My name is Micheal and I live in Chine. I helped write the
+    left, right = st.columns(2)
+    with left:
+        st.markdown("<h3 style='text-align: center; color: white;'>Micheal Li</h1>", unsafe_allow_html=True)
+    with right:
+        st.text("""Hello! My name is Micheal and I live in Chine. I helped write the
 code for the model and train it. I mostly worked on the backend. """)
 
-st.divider()
+    st.divider()
 
-left, right = st.columns(2)
-with left:
-    st.text("""Hi! My name's Freya and I live in Gilbert, Arizona. I contributed
+    left, right = st.columns(2)
+    with left:
+        st.text("""Hi! My name's Freya and I live in Gilbert, Arizona. I contributed
 to this project by creating the frontend website you are looking
 at right now! I also helped collect images for training the model.""")
-with right:
-    st.markdown("<h3 style='text-align: center; color: white;'>Freya Bajaj</h1>", unsafe_allow_html=True)
+    with right:
+        st.markdown("<h3 style='text-align: center; color: white;'>Freya Bajaj</h1>", unsafe_allow_html=True)
 
-st.divider()
+    st.divider()
 
-left, right = st.columns(2)
-with right:
-    st.text("""Hello! My name's Calixte de Belloy and I am 14 years old. I Live in
+    left, right = st.columns(2)
+    with right:
+        st.text("""Hello! My name's Calixte de Belloy and I am 14 years old. I Live in
 Marin which is just north of San Francisco. I contributed to the project
 by collecting more than 500 images to train the model and give data to the
 backhand coders.""")
-with left:
-    st.markdown("<h3 style='text-align: center; color: white;'>Calixte de Belloy</h1>", unsafe_allow_html=True)
+    with left:
+        st.markdown("<h3 style='text-align: center; color: white;'>Calixte de Belloy</h1>", unsafe_allow_html=True)
 
-st.divider()
+    st.divider()
 
-left, right = st.columns(2)
-with right:
-    st.markdown("<h3 style='text-align: center; color: white;'>Aditya Shinde</h1>", unsafe_allow_html=True)
-with left:
-    st.text("""Hey, my name's Aditya and I am from Folson, California. In this
+    left, right = st.columns(2)
+    with right:
+        st.markdown("<h3 style='text-align: center; color: white;'>Aditya Shinde</h1>", unsafe_allow_html=True)
+    with left:
+        st.text("""Hey, my name's Aditya and I am from Folson, California. In this
 project, I helped collect images and contributed to the backend as
 well as connecting the backend to the frontend.""")
 
