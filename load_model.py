@@ -19,7 +19,7 @@ def imshow(tensor, title=None):
 
 def loadModel(inputImage):
 	model = Deblur()
-	model.load_state_dict(torch.load('.\\latest.pth', map_location=torch.device('cpu')))
+	model.load_state_dict(torch.load('latest.pth', map_location=torch.device('cpu')))
 	img = Image.open(inputImage).convert('RGB')
 	print(img.size)
 	img_size = img.size
